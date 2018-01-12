@@ -1,0 +1,22 @@
+﻿<Window x:Class="ASARDHOME.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ASARDHOME"
+        mc:Ignorable="d"
+        Title="ASARDHOME" Height="350" Width="525"
+        BorderThickness="0" 
+        ResizeMode="CanResizeWithGrip"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button x:Name="on" Content="On" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="87" Height="52" Click="on_Click"/>
+        <Button x:Name="Of" Content="Off" HorizontalAlignment="Left" Margin="119,10,0,0" VerticalAlignment="Top" Width="87" Height="52" Click="Of_Click"/>
+        <TextBlock x:Name="status" HorizontalAlignment="Left" Margin="70,120,0,0" TextWrapping="Wrap" Text="Rozłączony" VerticalAlignment="Top" Height="29" Width="76"/>
+        <TextBox x:Name="comport"  HorizontalAlignment="Left" Height="23" Margin="10,92,0,0" TextWrapping="Wrap" Text="COM7" VerticalAlignment="Top" Width="196"/>
+        <Button x:Name="Włączony" Content="Włącz" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" Width="55" Height="24" Click="Connect_Click"/>
+        <Button x:Name="Rozłączony" Content="Rozłącz" HorizontalAlignment="Left" Margin="151,120,0,0" VerticalAlignment="Top" Width="55" Height="24" Click="Disconnect_Click" />
+        <ComboBox x:Name="comboSelect" HorizontalAlignment="Left" Margin="238,10,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboSelectPort"/>
+
+    </Grid>
+</Window>
